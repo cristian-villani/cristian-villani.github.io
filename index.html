@@ -5,8 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristian Villani – Projects</title>
   <style>
+   html, body {
+       height: 100%;
+       margin: 0;
+   }
     /* Simple styling */
     body {
+      background-image: 
+          linear-gradient( to bottom, rgba(1.0,1.0,1.0,1.0), rgba(0.5,0.5,0.5,0.5)),
+          url("mpi.png");
+      background-size: cover;        /* fills the screen */
+      background-repeat: no-repeat;  /* no tiling */
+      background-position: center;   /* centered */
       font-family: Arial, sans-serif;
       margin: 20px;
       text-align: center;
@@ -34,7 +44,9 @@
     a:hover {
       text-decoration: underline;
     }
-
+    .welcome-text {
+      color: red;
+    }
     .github-link {
       font-size: 0.8em;
       display: block;
@@ -46,7 +58,7 @@
 <body>
 
   <h1>Cristian Villani</h1>
-  <p>Welcome! Here are my projects:</p>
+  <p class="welcome-text">Welcome! Here are my projects:</p>
 
   <ul>
     <li>
