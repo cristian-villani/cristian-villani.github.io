@@ -5,48 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristian Villani – Projects</title>
   <style>
-   html, body {
-       height: 100%;
-       margin: 0;
-   }
-    /* Simple styling */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
     body {
-      background-image: 
-          linear-gradient( to bottom, rgba(1.0,1.0,1.0,1.0), rgba(0.5,0.5,0.5,0.5)),
+      background-image:
+          linear-gradient(to bottom, rgba(1,1,1,1), rgba(0.5,0.5,0.5,0.5)),
           url("mpi.png");
-      background-size: cover;        /* fills the screen */
-      background-repeat: no-repeat;  /* no tiling */
-      background-position: center;   /* centered */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       font-family: Arial, sans-serif;
       margin: 20px;
       text-align: center;
+      padding-top: 30px;
     }
 
     h1 {
       color: #333;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin: 10px 0;
-    }
-
-    a {
-      font-size: 1.2em;
-      text-decoration: none;
-      color: #0077cc;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
     .welcome-text {
       color: #a43737;
     }
+
+    /* Main project list */
+    ul.main {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    ul.main > li {
+      margin: 10px 0;
+    }
+
+    /* Parent links */
+    ul.main > li > a {
+      display: block;
+      font-size: 1.2em;
+      color: #0077cc;
+      text-decoration: none;
+      margin: 5px 0;
+    }
+
+    ul.main > li > a:hover {
+      text-decoration: underline;
+    }
+
+    /* Fix all link colors, including visited */
+    a:link, a:visited {
+      color: #0077cc;
+    }
+
+    /* Nested container for Raspberry / Embedded Linux */
+    .nested-container {
+      text-align: center; /* centers the container itself */
+    }
+
+    /* Nested Raspberry block with subtle right indent */
+    .nested {
+      display: inline-block;   /* shrink to content */
+      font-size: 0.9em;        /* slightly smaller than parent */
+      position: relative;
+      left: 30px;
+      transform: translateX(15px); /* subtle indent while keeping center */
+      margin-top: 2px;
+    }
+
+    .nested a {
+      text-decoration: none;
+    }
+
+    .nested a:hover {
+      text-decoration: underline;
+    }
+
+    .tag {
+      font-size: 0.75em;
+      color: #666;
+      margin-left: 5px;
+    }
+
     .github-link {
       font-size: 0.8em;
       display: block;
@@ -60,15 +103,23 @@
   <h1>Cristian Villani</h1>
   <p class="welcome-text">Welcome! Here are my projects:</p>
 
-  <ul>
-    <li>
-      <a href="https://cristian-villani.github.io/chemistry_simulations/index.html">
-        Chemistry Simulations
-      </a>
-    </li>
+  <ul class="main">
     <li>
       <a href="https://cristian-villani.github.io/electronic_simulations/index.html">
         Electronic Simulations
+      </a>
+      <div class="nested-container">
+        <div class="nested">
+          <a href="https://cristian-villani.github.io/raspberry_pi/index.html">
+            Raspberry Pi Projects
+          </a>
+          <span class="tag">[Embedded Linux]</span>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="https://cristian-villani.github.io/chemistry_simulations/index.html">
+        Chemistry Simulations
       </a>
     </li>
     <li>
