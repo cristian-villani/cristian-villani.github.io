@@ -3,7 +3,7 @@
 My professional journey began in university research in chemistry and computational science, where I spent several years developing software for complex chemical simulations and parallel computations.
   Later, I became a physics and chemistry teacher, combining my passion for science with teaching, while continuing to explore programming and embedded systems through personal projects.
 
-The background image on this site comes from an old Fortran program I wrote to implement a filter diagonalization method for quantum chemistry. This program ran on a Linux cluster at the university using MPI to distribute calculations across multiple nodes. It represents a turning point for me: combining programming, physics, and Linux cluster experience — and it’s still part of my journey toward more advanced software and embedded development.
+The background image on this site comes from an old Fortran program I wrote to implement a filter diagonalization method for quantum chemistry. This program ran on a Linux cluster at the university using MPI to distribute calculations across multiple nodes. It represents a turning point for me: combining programming, physics, and Linux cluster experience — and it’s still part of my journey toward more advanced software development.
 
 Over the years, I’ve developed projects in different languages and contexts:
 
